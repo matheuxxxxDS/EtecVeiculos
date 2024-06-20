@@ -11,11 +11,11 @@ public class AppDbSeed
         List<TipoVeiculo> tipoVeiculos = [
             new(){
                 Id = 1,
-                Nome = "Moto"
+                Nome = "Carro"
             },
             new(){
                 Id = 2,
-                Nome = "Carro"
+                Nome = "Moto"
             },
             new(){
                 Id = 3,
@@ -23,6 +23,62 @@ public class AppDbSeed
             }
         ];
         modelBuilder.Entity<TipoVeiculo>().HasData(tipoVeiculos);
-        #endregion
+    #endregion
+
+        #region Marcas
+        
+                List<Marca> marcas = [
+            new(){
+                Id = 1,
+                Nome = "Chevrolet"
+            },
+            new(){
+                Id = 2,
+                Nome = "Toyota"
+            },
+            new(){
+                Id = 3,
+                Nome = "Volkswagen"
+            }
+        ];
+        modelBuilder.Entity<Marca>().HasData(marcas);
+     #endregion
+
+
+
+        #region Modelo
+
+        List<Modelo> modelos = new() {
+            new() {
+                Id= 1,
+                Nome= "Opala",
+                MarcaId = 1
+            }
+        };
+
+
+        _ = new
+        List<Modelo>() {
+            new() {
+                Id= 2,
+                Nome= "Corolla",
+                MarcaId = 1
+            }
+        };
+
+
+        _ = new
+        List<Modelo>() {
+            new() {
+                Id= 3,
+                Nome= "Gol",
+                MarcaId = 1
+            }
+        };
+
+
+        modelBuilder.Entity<Modelo>().HasData(modelos);
+    #endregion
+        
     }
 }

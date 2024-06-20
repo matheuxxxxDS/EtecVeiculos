@@ -1,0 +1,3 @@
+Adicionar Dto para o Modelo pricipalmente , se possivel os dois !
+
+Fazer controller , depois de fazer o DTO , para dar certo!

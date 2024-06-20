@@ -7,3 +7,7 @@ dotnet sln add EtecVeiculos.Api\EtecVeiculos.Api.csproj
 dotnet new mvc -o EtecVeiculos.UI
 
 dotnet sln add EtecVeiculos.UI\EtecVeiculos.UI.csproj
+
+configurar Git Local:
+git config --global user.name MatheuxxxxDS
+git config --global user.email matheushe94@gmail.com
